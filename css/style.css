@@ -1,5 +1,9 @@
 body {
-    background-color: #962715;
+    background-image: url("../images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+    background-size: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,7 +20,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
 }
 
@@ -65,4 +69,13 @@ body {
     width: 42px;
     padding-top: 4px;
     vertical-align: left;
+}
+
+.foot {
+    width: 100%;
+    font-size: 10pt;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    background-color: #962715;
 }
