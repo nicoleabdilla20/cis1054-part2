@@ -25,13 +25,11 @@
     <body>
         <div class = "topnav">
             <a href = "index.html"><img src = "images/logo.png" alt = "logo"></a>
-            <a class = "page" href = "index.html">Home</a>
-            <a class = "active page" href = "menu.php">Menu</a>
+            <a class = " page" href = "index.html">Home</a>
+            <a class = "active page" href = "menu.html">Menu</a>
             <a class = "page" href = "favourites.html">Favourites</a>
             <a class = "page" href = "about.html">About</a>
             <a class = "page" href = "contact.html">Contact</a>
-            <a class = "page" href = "details.php"> Details</a>
-            <a class = "page" href = "favourites.php"> Details</a>
         </div>
         <section class = "menu">
             <div class = "foodmenu">
