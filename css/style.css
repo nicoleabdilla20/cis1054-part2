@@ -128,3 +128,106 @@ body {
   font-size: 1.2rem;
   margin-right: 10%;
 }
+
+.favourite {
+    float: right;
+    padding: 25px 25px;
+    height: 42px;
+    width: 42px;
+    padding-top: 4px;
+    align-items: right;
+    vertical-align: right;
+}
+
+.foot {
+    width: 100%;
+    font-size: 10pt;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    background-color: #962715;
+}
+
+/* Text Container */
+.container {
+    padding: 50px 75px;
+    background-color: #eeebe8;
+    margin:75px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+hr{
+    margin-top: 30px;
+    color: #962715;
+    border-color: #962715;
+    fill:  #962715;
+}
+
+
+/* Contact Form */
+form {
+    margin-top: 20px;
+}
+
+.contact-button {
+    border: none;
+    background-color: #962715;
+    display: inline-block;
+    min-width: 130px;
+    padding: .2em;
+    height: 40px;
+    text-align: center;
+    color:  #000000;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 120%;
+    font-weight: 300;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+button:hover,
+input [type="submit"] :hover,
+input [type="button"] :hover,
+.main-button:hover {
+    background-color:  #dbb99c;
+    text-decoration: none;
+}
+
+input [type="text"],
+input [type="email"],
+textarea,
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 90%;
+    background-color:  #ffffff;
+    border: 2px solid #ffffff;
+    margin: 0px 0 50px 0;
+    -moz-box-shadow: transparent 0px 0px 3px;
+    -webkit-box-shadow: transparent 0px 0px 3px;
+    box-shadow: transparent 0px 0px 3px;
+}
+
+input.contact-input {
+    font-size: 80%;
+}
+
+input [type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.form-input:focus,
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+.form-input:hover {
+    background-color: #dbb99c;
+    border-color:  #dbb99c;
+    -moz-box-shadow:  #dbb99c 0px 0px;
+    -webkit-box-shadow: #dbb99c 0px 0px 3px;
+    box-shadow:  #dbb99c 0px 0px 3px;
+}
+
