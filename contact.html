@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact Us</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+
+    <!--Stylesheet-->
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+</head>
+
+
+<body>
+    <div class = "topnav">
+        <a href = "index.html"><img src = "images/logo.png" alt = "logo"></a>
+        <a class = "page" href = "index.html">Home</a>
+        <a class = "page" href = "menu.php">Menu</a>
+        <a class = "page" href = "favourites.html">Favourites</a>
+        <a class = "page" href = "about.html">About</a>
+        <a class = "active page" href = "contact.html">Contact</a>
+    </div>
+
+    <div class = "container">
+        <h1>Contact us for more information</h1>
+        <hr/>
+        <p>Phone, Facebook, Instagram</p>
+        <form id="ajax-contact" action="php/mailer.php" method="POST" role="form">
+            <div class="row">
+                <label class = "contact" for = "name">Name</label>
+                <input type="text" class="contact-input" name="name" id="name" size="24" value="" placeholder="Enter your name and surname" required>
+            </div>
+            <div class="row">
+                <label class="contact" for="email">Email</label>
+                <input type="email" class="contact-input" name="email" id="email" size="24" value="" placeholder="Enter your email" required>
+            </div>
+            <div class="row">
+                <label class="contact" for="message">Message</label>
+                <textarea name="message" rows = "6"  id="message" name="message" class="contact-input" placeholder="Write your query here" required></textarea>
+            </div>
+            <div class="row">
+                <button class="contact-button" type="submit" id="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
