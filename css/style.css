@@ -72,59 +72,202 @@ body {
 }
 
 
-/*From Below Food Menu CSS */
-.menu{
-  background-color: #fabda0;
-  padding: 4% 0;
+/*From Below  Menu.php CSS */
+div.menu h2{
+    text-align: center;
+    color: white;
+    font-family: "Brush Script MT", 'Times New Roman',cursive;
+    font-size: 5em;
+}
+div.menu_content {
+	max-width: 1100px;
+	height: auto;
+	padding: 1px;
+	margin: 0 auto;
 }
 
-.menu h2{
+div.menu_content h1{
+    color: white;
+    text-align: center;
+
+}
+
+
+div.category {
+	float: left;
+	margin-left: 1%;
+	width: 32%;
+	background: #fff;
+	height: auto;
+	box-shadow: 10% 10% 15% #000;
+	margin-bottom: 3em;
+}
+
+div.category img {
+	
+    float:left;
+    margin-right: 1em;
+    size: square;
+}
+
+
+div.category a {
+	text-decoration: none;
+	color: #505050;
+}
+
+div.category.detail {
+	padding: 1em;
+	text-align: left;
+	float:left;
+}
+
+div.detail p {
+	text-align: right;
+	line-height: 3em;
+	color: #962715;
+	font-weight: bold;
+}
+
+
+/*From Below  reservation.php CSS */
+div.content {
+    background: #fff;
+    color: #000;
+    padding: 0.5em 3em;
+    height: auto;
+    display: block;
+}
+
+div.res_content {
+    padding: 5% 15%;
+}
+
+form.booking {
+	max-width: 50em;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+h2.f_b{
+	text-align: center;
+	color: #505050;
+	font-size: 5em;
+}
+
+
+span.icon:before {
+	font-family: 'Courier New', Courier, monospace;
+	margin-right: 1em;
+	font-size: medium;
+	color: #962715;
+}
+
+p.f_m {
+	text-align: center;
+	color: #962715;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+
+label {
+	display: block;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	color: #505050;
+	font-size: medium;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=time] {
+	width: 100%;
+	border: 0.1em solid #CCCCCC;
+	padding: 0.6em;
+	height: 3em;
+	background: #efefef;
+	border-radius: 1em;
+}
+
+textarea {
+	width: 100%;
+	background: #efefef;
+	border: 0.1em solid #ccc;
+	padding: 0.6em;
+	border-radius: 1em;
+	height: 10em;
+}
+
+/*From Below  contact.php CSS */
+.contact h2{
+    text-align: center;
+    color: white;
+    font-family: "Brush Script MT", 'Times New Roman',cursive;
+    font-size: 3em;
+}
+.contact button#reservation{
+    color: #962715;
+    height :20em;
+    border: none;
+    width:20em;
+    background-color: white;
+    margin-left: 20em;
+    margin-right:0.5em;
+    font-size: 1em;
+    font-family: "Lucida Calligraphy",cursive;
+}
+
+.contact button p{
+    color: #962715;
+    font-size: 0.7em;
+    font-family: cursive;
+}
+
+.contact button#query{
+    color: #962715;
+    height :20em;
+    border: none;
+    width:20em;
+    background-color: white;
+    margin-right: -20em;
+    font-size: 1em;
+    font-family: "Lucida Calligraphy",cursive;
+}
+
+
+/*From Below  contact.php CSS */
+.contact h2{
   text-align: center;
-  color: #f4f7ff;
-  font-size: 2rem;
-  margin-bottom: 2%;
+  color: white;
+  font-family: "Brush Script MT", 'Times New Roman',cursive;
+  font-size: 3em;
 }
-
-.foodmenu {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1%;
-  
-}
-
-.displaymenu{
-  width: 43%;
-  margin: 1%;
-  padding: 2%;
-  float: left;
-  background-color: white;
-  border-radius: 15px;
-}
-
-.displaymenu h4{
-
-  text-align: center;
-
-}
-
-.displaymenu .Category{
-
-  text-align: center;
-  font-size: default;
-}
-
-.displaymenu .Dish{
-
-  text-align: left;
-  font-size: 1rem;
-  margin-left: 20%;
+.contact button#reservation{
   color: #962715;
-  
+  height :20em;
+  border: none;
+  width:20em;
+  background-color: white;
+  margin-left: 20em;
+  margin-right:0.5em;
+  font-size: 1em;
+  font-family: "Lucida Calligraphy",cursive;
 }
 
-.displaymenu .Price{
+.contact button p{
+  color: #962715;
+  font-size: 0.7em;
+  font-family: cursive;
+}
 
-  text-align: right;
-  font-size: 1.2rem;
-  margin-right: 10%;
+.contact button#query{
+  color: #962715;
+  height :20em;
+  border: none;
+  width:20em;
+  background-color: white;
+  margin-right: -20em;
+  font-size: 1em;
+  font-family: "Lucida Calligraphy",cursive;
 }
