@@ -8,7 +8,7 @@
         <title>Korra - Menu</title>
         <meta name = "viewport" content = "width=device-width, initial scale=1">
         <meta name = "keyboards" content = "Home, Menu, Favourites, About, Contact">
-        <script src="button.js"></script>
+        <script src="js/button.js"></script>
 
         <!--stylesheet-->
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
