@@ -1,6 +1,7 @@
 <?php 
 	
 	require "admin/db.php";	
+	//reservation
 	$msg = "";	
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {		
 		if(isset($_POST['submit'])) {			
@@ -69,7 +70,7 @@
 				</div>				
 				<div class="input">				
 					<label>Phone Number</label>
-					<input type="text" name="phone" placeholder="Enter your phone number" required>					
+					<input type="number" name="phone" placeholder="Enter your phone number" required>					
 				</div>				
 				<div class="input">					
 					<label>Date</label>

@@ -84,8 +84,7 @@
         <div class = "topnav">
             <a href = "index.html"><img src = "images/logo.png" alt = "logo"></a>
             <a class = " page" href = "index.html">Home</a>
-            <a class = "active page" href = "reservation.php">Reservation</a>
-            <a class = " page" href = "menu.php">Menu</a>
+            <a class = "active page" href = "menu.php">Menu</a>
             <a class = "page" href = "details.php">Details</a>
             <a class = "page" href = "favourites.php">Favourites</a>
             <a class = "page" href = "about.html">About</a>
