@@ -66,7 +66,9 @@
                             </div>";
                         }                       
                     }
-                }else{}
+                }else{
+                    echo $twig->render('404.html');
+                }
             }
         }
 ?>
