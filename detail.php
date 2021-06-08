@@ -41,7 +41,7 @@
         <meta name = "viewport" content = "width=device-width, initial scale=1">
         <meta name = "keyboards" content = "Home, Menu, Favourites, About, Contact">
         <!--stylesheet-->
-        <link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
     </head>
     <body>
         <div class = "topnav">
