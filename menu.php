@@ -52,7 +52,7 @@
                                     <img src='images/menu/".$row['id'].".jpg' width='80px' height='80px' /> 
                                     <div class='menu'>              
                                         <h4>".$row['dish']."</h4>
-                                         <p class='price'>€".$row['price']."</p>oi
+                                         <p class='price'>€".$row['price']."</p>
                                     </div>
                                 </a>
                             </div>";
