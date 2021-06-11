@@ -1,0 +1,130 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jun 11, 2021 at 03:58 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `restaurant`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `food`
+--
+
+CREATE TABLE `food` (
+  `id` int(11) NOT NULL,
+  `dish` varchar(255) NOT NULL,
+  `category` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `detail` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `food`
+--
+
+INSERT INTO `food` (`id`, `dish`, `category`, `price`, `detail`) VALUES
+(1, 'Pancakes', 'breakfast', '5.00', 'Served with honey or chocolate. Choose one of the following fruits: banana, berries or strawberries.'),
+(2, 'Buongiorno', 'breakfast', '8.50', 'Hot milk with coffee, bread with butter and jam, hot croissant and cookie.'),
+(3, 'Drittata Di Formaggio', 'breakfast', '4.00', 'Includes eggs and mix of different cheese.'),
+(4, 'Zuppa del Giorno', 'starter', '4.00', 'Ask waiter.'),
+(5, 'Moules Marinare', 'starter', '14.50', 'Black shell mussels, white wine, shallots, herbs and double cream .'),
+(6, 'Bruschetta', 'starter', '6.00', 'Semi-dried cherry tomatoes, basil, flaked cottage cheese and marinated olives.'),
+(7, 'Italiano Pizza', 'main', '11.10', 'Red sauce pizza topped with sausage,pepperoni, onions, green peppers, and mozzarella cheese.'),
+(8, 'Misto Funghi', 'main', '12.70', 'Fior di latte mozzarella, porcini mushrooms puree, white mushrooms, caciocavallo cheese and true oil.'),
+(9, 'Korra', 'main', '15.50', 'Tomato sauce, fior di latte mozzarella, fresh local prawns, black shell mussels, calamari, vongole, fresh tuna, olives and fresh herbs.'),
+(10, 'Spaghetti Vongole', 'main', '14.75', 'Clams, garlic, chillies, white wine, fish broth, parsley, extra virgin olive oil and lemon pangrattato.'),
+(11, 'Tortellini ', 'main', '13.40', 'Asparagus, tomato concasse, aromatic sauce, rucola and grana shavings'),
+(12, 'Burger', 'main', '15.40', 'Beef patty, bacon, chilli sauce, crispy onions and red leicester cheese, lettuce leaves, tomatoes and homemade onion rings'),
+(13, 'Buonissima', 'dessert', '8.00', 'Piece of warm homemade cake.'),
+(14, 'Ice Cream', 'dessert', '9.50', '3 scoops of ice-cream served with fruits. '),
+(15, 'Sorbet', 'dessert', '6.00', 'Served in a glass.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `query`
+--
+
+CREATE TABLE `query` (
+  `q_id` int(11) NOT NULL,
+  `c_email` varchar(320) NOT NULL,
+  `c_name` varchar(50) NOT NULL,
+  `c_phone` varchar(8) NOT NULL,
+  `complaint` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reservation`
+--
+
+CREATE TABLE `reservation` (
+  `r_id` int(11) NOT NULL,
+  `email` varchar(320) NOT NULL,
+  `num_ppl` varchar(20) NOT NULL,
+  `phone` varchar(8) NOT NULL,
+  `time` varchar(100) NOT NULL,
+  `date` varchar(100) NOT NULL,
+  `suggestions` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `food`
+--
+ALTER TABLE `food`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `query`
+--
+ALTER TABLE `query`
+  ADD PRIMARY KEY (`q_id`);
+
+--
+-- Indexes for table `reservation`
+--
+ALTER TABLE `reservation`
+  ADD PRIMARY KEY (`r_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `query`
+--
+ALTER TABLE `query`
+  MODIFY `q_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `reservation`
+--
+ALTER TABLE `reservation`
+  MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
