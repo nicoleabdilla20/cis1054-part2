@@ -92,10 +92,11 @@ div.menu_content h1{
   text-align: center;
 }
 /*From Below  Menu.php CSS */
+
 .category {
-	float: left;
-	margin-left: 0.5em;
-	width: 18em;
+	float: left; /* Places item to the left of each other*/
+	margin-left: 0.5em; /* spacing between elements */
+	width: 18em; /*total with the items can take on the pace */
     height: auto;
 	background: white;
 	box-shadow: 0.5em 0.5em 1em #000;
@@ -111,13 +112,13 @@ div.menu_content h1{
 
 .category img {	
     margin-right: 1em;
-    size: square;
-    width:18em;
+    size: square; /* to fit perfectly*/
+    width:18em; /* set width and height the same 18:18*/
     height:18em;
 }
 
 .category.menu {
-	padding: 1em;
+	padding: 1em; 
 	text-align: left;
 	float:left;
 }
@@ -150,7 +151,7 @@ div.menu_content h1{
     display:block;
 }
 
-.menu_content {
+.menu_content { /* css for item block*/
 	max-width: auto;
 	height: auto;
 	padding: 8em;
@@ -220,8 +221,8 @@ label {
 	color: #505050;
 	font-size: medium;
 }
-
-input[type=text], input[type=email], input[type=number], input[type=date], input[type=time] {
+/* inside form there is a div with input name https://www.w3schools.com/css/css_form.asp*/
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=time] { 
 	width: 100%;
 	border: 0.1em solid #CCCCCC;
 	padding: 0.6em;
@@ -275,33 +276,6 @@ textarea {
     font-family: "Lucida Calligraphy",cursive;
 }
 
-
-/*404 page.html*/
-body{
-    font-family: 'Lato', sans-serif;
-    color: #888;
-    margin: 0;
-}
-
-#page{
-    display: table;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-}
-
-.error{
-	  display: table-cell;
-	  vertical-align: middle;
-}
-
-.error h1{
-	  font-size: 50px;
-	  display: inline-block;
-	  padding-right: 12px;
-	  animation: type .5s alternate infinite;
-}
-
 /*detail*/
 .food{
     margin-top:-5em;
@@ -310,7 +284,7 @@ body{
 	width:60em;
     height: 60em;
 	background: white;
-    opacity: 0.9;
+    opacity: 0.9; /* creates the background into opaque*/
 	box-shadow: 0.5em 0.5em 1em #000;
 	margin-bottom: 5em;
 }
@@ -340,7 +314,8 @@ body{
 	text-align: center;
 	line-height: 2em;
 }
-/*I got the info about the animated transitions from a github public project - I can't find the link :(*/
+/*https://stackoverflow.com/questions/25334852/smooth-letter-spacing-transition-on-other-browsers 
+https://css-tricks.com/almanac/properties/t/transition/ */
 h3.c_header {
 	text-align: center;
 	text-transform:uppercase;
@@ -373,16 +348,16 @@ p.c_det {
 
 span.c_cat {
 	font-weight: bold;
-	letter-spacing: 2px;
-	margin-right: 20px;
+	letter-spacing: 0.5em;
+	margin-right: 5em;
 }
 
 span.c_price {
 	font-weight: bold;
-	letter-spacing: 2px;
-	margin-right: 60px;
+	letter-spacing: 0.1em;
+	margin-right: 20em;
 }
-
+/*https://www.w3schools.com/css/css_form.asp */
 .c_det input[type=text] {
 	padding: 10px 20px;
 	display: inline;
@@ -391,6 +366,7 @@ span.c_price {
 	text-align: center;
 }
 
+/* https://css-tricks.com/almanac/properties/t/transition/ */ 
 input[type=submit].submit.add_fav {
 	background: #962715;
 	border: 0.1em double #962715;
@@ -403,7 +379,7 @@ input[type=submit].submit.add_fav {
 	-moz-transition: letter-spacing 200ms ease-in;
 	-webkit-transition: letter-spacing 200ms ease-in;
 }
-
+/*https://www.w3schools.com/css/css_form.asp */
 input[type=submit].submit.add_fav:hover {
-	letter-spacing: 3px;
+	letter-spacing: 1em;
 }
