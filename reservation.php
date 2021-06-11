@@ -1,14 +1,18 @@
-<?php 
-	
+<!-- Made by Nicole Abdilla @nicoleabdilla20 -->
+<?php
+	session_start();
+	require_once __DIR__.'/bootstrap.php';
 	require "admin/db.php";	
 	//reservation
 	$msg = "";	
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {		
 		if(isset($_POST['submit'])) {			
 			$People = preg_replace("#[^0-9]#", "", $_POST['People']);
-			$email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+			// filter_var is a filter function that filters a variable with a specified filter in this case FILTER_VALIDATE_EMAIL
+			$email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL); // FILTER_VALIDATE_EMAIL is a validation check to check the input is in an email format.
 			$phone = preg_replace("#[^0-9]#", "", $_POST['phone']);
-			$date = htmlentities($_POST['date'], ENT_QUOTES, 'UTF-8');
+			// htmlentities function converts all applicable characters to HTML entities
+			$date = htmlentities($_POST['date'], ENT_QUOTES, 'UTF-8'); // ENT_QUOTES is a paramater which converts double and single quotes.
 			$time = htmlentities($_POST['time'], ENT_QUOTES, 'UTF-8');
 			$suggestions = htmlentities($_POST['suggestions'], ENT_QUOTES, 'UTF-8');			
 			if($People != "" && $email && $phone != "" && $date != "" && $time != "" && $suggestions != "") {			
@@ -27,7 +31,7 @@
 				}				
 			}else{				
 				$msg = "<p style='padding: 15px; color: red; background: #ffeeee; font-weight: bold; font-size: 13px; border-radius: 4px; text-align: center;'>Incomplete form data or Invalid data type</p>";				
-				print_r($_POST);				
+				print_r($_POST);	//this function displays information about a variable			
 			}			
 		}		
 	}	
@@ -45,23 +49,21 @@
         <div class = "topnav">
             <a href = "index.html"><img src = "images/logo.png" alt = "logo"></a>
             <a class = " page" href = "index.html">Home</a>
-            <a class = "active page" href = "reservation.php">Reservation</a>
-            <a class = " page" href = "menu.php">Menu</a>
-            <a class = "page" href = "details.php">Details</a>
+			<a class = "page" href = "about.html">About</a>
+            <a class = "active page" href = "contact.php">Contact</a>
+            <a class = "page" href = "menu.php">Menu</a>
             <a class = "page" href = "favourites.php">Favourites</a>
-            <a class = "page" href = "about.html">About</a>
-            <a class = "page" href = "contact.html">Contact</a>
         </div>
-
 <div class="content">
 	<div class="res_content">		
-		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="booking">			
+	<!-- the below is the form to book a table -->	
+	<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="booking">	<!-- PHP_SELF returns the current script that is the process of executing.-->	
 			<h2 class="f_b"><span class="icon">Reserve a Table</span></h2>
 			<p class="f_m">The Best Place To Eat</p>			
 			<?php echo "<br/>".$msg; ?>		
 			<div class="box">			
 				<div class="input">					 
-					 <label>Number of People</label>
+					<label>Number of People</label>
 					<input type="number" placeholder="How many People" min="1" name="People" id="People" required>				
 				</div>			
 				<div class="input">					
