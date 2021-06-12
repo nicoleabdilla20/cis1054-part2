@@ -66,7 +66,7 @@
 				</div>			
 				<div class="c_det">	
 					<!-- The below is the outputting of the item details-->				
-					<form class="" method="post" action="d.php">	
+					<form class="" method="post" action="detail.php">	
 						<h3 class="c_header"><?php echo $dish; ?></h3>
 						<p class="c_det"><?php echo $detail; ?> </p>
 						<p><span class="c_cat">Category:</span> <?php echo $category; ?></p>
