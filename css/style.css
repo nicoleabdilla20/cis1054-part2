@@ -8,7 +8,8 @@ body {
 }
 
 .mySlides {
-    margin-top: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -81,13 +82,21 @@ body {
     vertical-align: right;
 }
 
+/*footer*/
+
+.texttable {
+    color: white;
+    width: 90%;
+}
+
 .foot {
     width: 100%;
     font-size: 10pt;
     text-align: center;
+    text-decoration-color: white;
     color: rgb(255, 255, 255);
     overflow: hidden;
-    background-color: #962715;
+    background-color: #000000;
 }
 
 /* Text Container */
@@ -105,6 +114,38 @@ hr{
     border-color: #962715;
     fill:  #962715;
 }
+
+/* About */
+/* Opening hours table */
+table{
+    float: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width:350px;
+}
+td, th {
+    border: 1px dotted #96261526;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #9626158b;
+  }
+
+table.split td{
+    border: none !important;
+    border-collapse: collapse;
+}
+
+dt{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
 
 
 
@@ -139,6 +180,7 @@ input [type="button"] :hover,
     text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 
 input [type="text"],
 input [type="email"],
@@ -174,6 +216,8 @@ textarea:hover,
     -webkit-box-shadow: #dbb99c 0px 0px 3px;
     box-shadow:  #dbb99c 0px 0px 3px;
 }
+=======
+>>>>>>> Stashed changes
 
 
 
