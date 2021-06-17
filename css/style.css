@@ -72,6 +72,64 @@ body {
     vertical-align: left;
 }
 
+
+/*From Below Food Menu CSS */
+.menu{
+  background-color: #fabda0;
+  padding: 4% 0;
+}
+
+.menu h2{
+  text-align: center;
+  color: #f4f7ff;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+
+.foodmenu {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+  
+}
+
+.displaymenu{
+  width: 43%;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.displaymenu h4{
+
+  text-align: center;
+
+}
+
+.displaymenu .Category{
+
+  text-align: center;
+  font-size: default;
+}
+
+.displaymenu .Dish{
+
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 20%;
+  color: #962715;
+  
+}
+
+.displaymenu .Price{
+
+  text-align: right;
+  font-size: 1.2rem;
+  margin-right: 10%;
+}
+
 .favourite {
     float: right;
     padding: 25px 25px;
@@ -148,7 +206,6 @@ dt{
 
 
 
-
 /* Contact Form */
 form {
     margin-top: 20px;
@@ -180,8 +237,11 @@ input [type="button"] :hover,
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
+=======
+>>>>>>> main
 input [type="text"],
 input [type="email"],
 textarea,
@@ -218,6 +278,4 @@ textarea:hover,
 }
 =======
 >>>>>>> Stashed changes
-
-
 
