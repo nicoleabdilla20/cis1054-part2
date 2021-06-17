@@ -380,12 +380,11 @@ input[type=submit].submit.add_fav {
 	-moz-transition: letter-spacing 200ms ease-in;
 	-webkit-transition: letter-spacing 200ms ease-in;
 }
-<<<<<<< HEAD
+
 /*https://www.w3schools.com/css/css_form.asp */
 input[type=submit].submit.add_fav:hover {
 	letter-spacing: 1em;
 }
-=======
 
 .favourite {
     float: right;
@@ -494,11 +493,7 @@ input [type="button"] :hover,
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 
-=======
->>>>>>> main
 input [type="text"],
 input [type="email"],
 textarea,
@@ -533,7 +528,3 @@ textarea:hover,
     -webkit-box-shadow: #dbb99c 0px 0px 3px;
     box-shadow:  #dbb99c 0px 0px 3px;
 }
-=======
->>>>>>> Stashed changes
-
->>>>>>> jessica
