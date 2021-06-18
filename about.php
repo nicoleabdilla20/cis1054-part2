@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <title> Contact Us</title>
     <title> About Us</title>
     <meta name = "viewport" content = "width=device-width, initial-scale = 1">
 
@@ -12,14 +11,14 @@
 
 
 <body>
-  <div class = "topnav">
-    <a href = "index.html"><img src = "images/logo.png" alt = "logo"></a>
-    <a class = "page" href = "index.html">Home</a>
-    <a class = "active page" href = "about.html">About</a>
-    <a class = "page" href = "contact.php">Contact</a>
-    <a class = "page" href = "menu.php">Menu</a>
-    <a class = "page" href = "favourites.php">Favourites</a>
-</div>
+    <div class = "topnav">
+        <a href = "index.html"><img src = "images/logo.png" alt = "logo"></a>
+        <a class = "page" href = "index.html">Home</a>
+        <a class = "page" href = "menu.php">Menu</a>
+        <a class = "page" href = "favourites.php">Favourites</a>
+        <a class = "active page" href = "about.html">About</a>
+        <a class = "page" href = "contact.html">Contact</a>
+    </div>
     
     <div class="container">
         <h1>About</h1>
@@ -43,8 +42,7 @@
             <table class="split">
             <tr>
               <td>
-                <h1><b>Address</b></h1>
-              <iframe width="600" height="470" id="gmap_canvas" 
+              <iframe width="500" height="400" id="gmap_canvas" 
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=35.857166,%2014.571172+(Korra)
               &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
               frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -52,7 +50,7 @@
 
               </td>
             <td>
-                <h1><b>Opening Hours </b></h1>
+                <b>Opening Hours</b>
             <table>
               <tr>
                 <td>Monday</td>
@@ -84,6 +82,9 @@
               </tr>
             </table> 
             </td>
+
+
+  
     </body>
     </html>
 </DOCTYPE>

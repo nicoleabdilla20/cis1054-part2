@@ -1,7 +1,7 @@
 <!-- Made by Nicole Abdilla @nicoleabdilla20 -->
 <?php
 	session_start();
-    require_once __DIR__.'/bootstrap.php';
+    //require_once __DIR__.'/bootstrap.php';
 	require 'admin/db.php';
     $sql = "SELECT* FROM food"; //food is a table from restaurant database
     $res = mysqli_query($db, $sql);
@@ -26,7 +26,7 @@
                         //BreakFast - the below is the outputting process of the data in the table                       
                         if($row['category'] == "breakfast") {  //.= is a concatenation assignment, type of string operator                    
                             $bfast .= "<div class='category'>              
-							<a href='detail.php?fid=".$row['id']."'>
+							<a href='detail.php?id=".$row['id']."'>
                                 <img src='images/menu/".$row['id'].".jpg' width='80px' height='80px' /> 
                                 <div class='menu'>
                                     <h4>".$row['dish']."</h4>                                    
@@ -37,7 +37,7 @@
                         //Main  - the below is the outputting process of the data in the table  
                         }else if($row['category'] == "main") {
                             $main .=	"<div class='category'>
-							<a href='detail.php?fid=".$row['id']."'>
+							<a href='detail.php?id=".$row['id']."'>
                                 <img src='images/menu/".$row['id'].".jpg' width='80px' height='80px' /> 
                                 <div class='menu'>                    
                                     <h4>".$row['dish']."</h4>
@@ -48,7 +48,7 @@
                         //Starter - the below is the outputting process of the data in the table  
                         }else if($row['category'] == "starter") {
                             $starter .= "<div class='category'>
-							<a href='detail.php?fid=".$row['id']."'>
+							<a href='detail.php?id=".$row['id']."'>
                                     <img src='images/menu/".$row['id'].".jpg' width='80px' height='80px' /> 
                                     <div class='menu'>              
                                         <h4>".$row['dish']."</h4>
@@ -59,7 +59,7 @@
                         //Dessert - the below is the outputting process of the data in the table        
                         }else if($row['category'] == "dessert") {
                             $dessert .= "<div class='category'>
-							<a href='detail.php?fid=".$row['id']."'>
+							<a href='detail.php?id=".$row['id']."'>
                                 <img src='images/menu/".$row['id'].".jpg' width='80px' height='80px' /> 
                                 <div class='menu'>
                                     <h4>".$row['dish']."</h4>
@@ -96,7 +96,7 @@
         </div>
         <div class = "title">
                 <h2>Food Menu</h2>
-                <h3>Press on the food item for more detail</h3>
+                <h3>Press on the food item for more product</h3>
         </div>
         <div class="sec">
             <div class="menu_content">	

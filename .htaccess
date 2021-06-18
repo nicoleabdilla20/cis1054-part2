@@ -1,0 +1,6 @@
+ErrorDocument 401 "<H1>Unauthorized </H1> <H2>Sorry! You are not logged into a password-protected area!</H2>"
+ErrorDocument 403 "<H1>Forbidden </H1> <H2>Sorry! Browser does not have permission to perform the requested action!</H2>"
+ErrorDocument 404 "<H1>ERROR 404 </H1> <H2>Sorry! No party over here!</H2>"
+ErrorDocument 500 "<H1>Internal Server Error </H1> <H2>Sorry! Server was unable to finish processing the request!</H2>"
+ErrorDocument 502 "<H1>Bad Gateway </H1> <H2>Sorry! Server received an invalid response from an upstream server!</H2>"
+ErrorDocument 503 "<H1>Service Unavailable </H1> <H2>Sorry! Server is currently unable to process the request!</H2>"
